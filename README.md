@@ -4,7 +4,7 @@
 
 ## AR Español
 
-*Digital Ars* es una aplicación de billetera virtual desarrollada como proyecto final grupal del curso de Desarrollo IT dictado por *Agencia CITIA* en colaboración con *Alkemy*.
+*Digital Ars* es una aplicación de billetera virtual desarrollada como proyecto final grupal del curso de .NET/REACT dictado por *Agencia CITIA* en colaboración con *Alkemy*.
 
 La aplicación cuenta con una API backend desarrollada en *.NET* y una interfaz frontend responsiva hecha con *React. La documentación y prueba de las API se realiza con **Swagger, y se utiliza **JWT* para autenticación y seguridad.
 
