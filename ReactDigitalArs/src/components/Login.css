@@ -1,0 +1,176 @@
+/* Contenedor principal dividido */
+.login-page {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Parte izquierda: descripción + logo */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #6F04D9, #1B0273);
+  color: white;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-left-logo {
+  width: 450px;
+  margin-bottom: 2rem;
+}
+
+.login-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.login-left p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Parte derecha: login form */
+.login-right {
+  flex: 1;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-input:focus {
+  border-color: #6F04D9;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.login-button, .register-button {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button {
+  background-color: #3866F2;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #0597F2;
+}
+
+.register-button {
+  background-color: #05C7F2;
+  color: white;
+}
+
+.register-button:hover {
+  background-color: #1B0273;
+}
+
+.login-error {
+  margin-top: 1rem;
+  color: red;
+  font-weight: 600;
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-left,
+  .login-right {
+    flex: none;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .login-left {
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  .login-left-logo {
+    margin: 0 auto 1rem auto;
+  }
+
+  .login-left h1 {
+    font-size: 2rem;
+  }
+
+  .login-left p {
+    font-size: 1rem;
+  }
+
+  .login-card {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .login-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .login-input {
+    font-size: 0.95rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .login-button, .register-button {
+    flex: none;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
